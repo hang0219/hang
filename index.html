@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,16 +21,118 @@
 <p>
 hello 大家好！
 我的q 2500333399
-
-
-
 </p>
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>烟花效果</title>
+<style>
+  .firework {
+    position: absolute;
+    background-color: #f00;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: explode 1s forwards;
+  }
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<script>
+  setInterval(() => {
+    const firework = document.createElement('div');
+    firework.classList.add('firework');
+    firework.style.left = Math.random() * window.innerWidth + 'px';
+    firework.style.top = Math.random() * window.innerHeight + 'px';
+    document.body.appendChild(firework);
+    setTimeout(() => {
+      firework.remove();
+    }, 1000);
+  }, 300);
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>烟花效果</title>
+</head>
+<body>
+<h1>玩点小游戏happy一下吧</h1>
+<p>点击下面的链接开始游戏：</p>
+<a href="https://www.extrabux.cn/go/cCpvk05rNXdNmpE1YTJh6%2FcIErs8nPapJzMeDXxzAQ4%3D?ec=2">点击这里开始游戏</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简介</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>个人简介</h1>
+  <p>大家好！我叫饶杭</p>
+  <p>我正在努力学习中</p>
+</div>
+</body>
+</html>
 
 
 
-<div style="background-color: blu; padding: 10px;"><a href="https://www.midorg.com/h.html" style="color:biue ; text-decoration: none;">友情链接</a></div>
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
